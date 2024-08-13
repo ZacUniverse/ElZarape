@@ -128,9 +128,11 @@ export function searchBebida() {
 
     if (filtroPor === "nombre") {
         resultados = bebidas.filter(bebida => bebida.nombre.toLowerCase().includes(filtro));
-    } else if (filtroPor === "id") {
-        resultados = bebidas.filter(bebida => bebida.idBebida.toString().toLowerCase().includes(filtro));
-    } else {
+    } else if (filtroPor === "precio") {
+        resultados = bebidas.filter(bebida => bebida.precio.toString().toLowerCase().includes(filtro));
+    } else if (filtroPor === "categoria") {
+        resultados = bebidas.filter(bebida => bebida.categoria.toString().toLowerCase().includes(filtro));
+    }else {
         resultados = bebidas; // Muestra todos si no hay filtro o filtro no válido
     }
 
@@ -144,6 +146,7 @@ export function searchBebida() {
             '<td>' + bebida.descripcion + '</td>' +
             '<td>' + bebida.precio + '</td>' +
             '<td>' + bebida.categoria + '</td>' +
+            '<td>' + bebida.estatus + '</td>' +
             '</tr>';
         cuerpo += registro;
     });
