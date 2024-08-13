@@ -1,6 +1,6 @@
 let indexBebidaSeleccionado;
 let bebidas = [];
-let idContador = 4; // consecutividad del id
+let idContador = 5; // consecutividad del id
 
 export function addBebida() {
     let idBebida,
