@@ -78,6 +78,7 @@ export function updateUsuario() {
     usuario.idUsuario = idUsuario;
     usuario.nombre = nombre;
     usuario.contraseña = contraseña;
+    usuario.estatus = "Activo";
     usuarios[indexUsuarioSeleccionado] = usuario;
     clean();
     loadTabla();
