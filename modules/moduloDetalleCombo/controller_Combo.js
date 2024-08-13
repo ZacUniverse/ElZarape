@@ -32,7 +32,7 @@ export function addCombos() {
     combo.descripcion = descripcion;
     combo.precio = precio;
     combo.alimentos = alimentos;
-    combo.bebidass = bebidas;
+    combo.bebidas = bebidas;
     combo.postres = postres;
     combo.size = size;
     combo.foto = foto;
