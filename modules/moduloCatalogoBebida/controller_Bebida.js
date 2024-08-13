@@ -127,11 +127,11 @@ export function searchBebida() {
     let resultados = [];
 
     if (filtroPor === "nombre") {
-        resultados = bebida.filter(bebida => bebida.nombre.toLowerCase().includes(filtro));
+        resultados = bebidas.filter(bebida => bebida.nombre.toLowerCase().includes(filtro));
     } else if (filtroPor === "id") {
-        resultados = bebida.filter(bebida => bebida.idBebida.toString().toLowerCase().includes(filtro));
+        resultados = bebidas.filter(bebida => bebida.idBebida.toString().toLowerCase().includes(filtro));
     } else {
-        resultados = bebida; // Muestra todos si no hay filtro o filtro no válido
+        resultados = bebidas; // Muestra todos si no hay filtro o filtro no válido
     }
 
     let cuerpo = "";
