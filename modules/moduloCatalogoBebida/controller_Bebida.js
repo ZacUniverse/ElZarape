@@ -107,7 +107,7 @@ export function updateBebida() {
         bebida.precio=precio;
         bebida.categoria=categoria;
         bebida.foto=foto;
-        bebida.estatus = '<i class="bi bi-x-circle "></i>'+"Activo";
+        bebida.estatus = "Activo";
         bebidas[indexBebidaSeleccionado] = bebida;
         clean();
         loadTabla();
